@@ -18,7 +18,16 @@ Use len() to find the total words.
 ### Step 6: 
 Run the program to determine the number of words in the file created.
 ## PROGRAM:
+```
+import sys
+count=0
+with open(sys.argv[1],'r') as f:
+	for line in f:
+	    word=line.split()
+	    count+=len(word)
+print('Word count in file=',count)
 
+```
 ### OUTPUT:
 
 ![Screenshot 2023-12-23 125719](https://github.com/KeerthanaaSaravanan/EX-10_command-line-arguments-to-count-word/assets/145742596/d87b736f-1d73-4525-9fa1-08a7e867feb8)
